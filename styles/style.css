@@ -1,12 +1,16 @@
 html {
     text-align: center;
     font-family: monospace;
-}
 
+}
+#top{
+    position:absolute;
+    top: 0px;
+}
 #calc {
     display: flex;
     min-height: 95vh;
-    justify-content: center;
+    justify-content:center;
     align-content: center;
     align-items: center;
     height: 100vh;
