@@ -112,3 +112,27 @@ button {
 .percent:active {
     background-color: rgb(123, 189, 255);
 }
+.sqrt {
+    background-color: aqua
+}
+.sqrt:active {
+    background-color: rgb(165, 255, 255);
+}
+.sqred {
+    background-color: aqua
+}
+.sqred:active {
+    background-color: rgb(165, 255, 255);
+}
+.power {
+    background-color: aqua
+}
+.power:active {
+    background-color: rgb(165, 255, 255);
+}
+.pi {
+    background-color: aqua
+}
+.pi:active {
+    background-color: rgb(165, 255, 255);
+}

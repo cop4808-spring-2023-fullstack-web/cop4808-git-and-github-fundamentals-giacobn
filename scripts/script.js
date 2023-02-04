@@ -41,9 +41,19 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
                 updateDisplay();
+            }else if(buttons[i].classList.contains('sqrt')){
+                inputSqrt(displayValue);
+                updateDisplay();
+            }else if(buttons[i].classList.contains('sqred')){
+                inputSqred(displayValue);
+                updateDisplay();
+            }else if(buttons[i].classList.contains('pi')){
+                inputPi();
+                updateDisplay();
+            }
         }
     )}
 }
@@ -176,9 +186,36 @@ function operate(x, y, op) {
         } else {
         return x / y;
         }
+    }else if(op === "power") {
+        return(x ** y);
     }
 }
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+function inputSqred(num) {
+    displayValue = (num * num).toString();
+}
+function inputSqrt(num) {
+    displayValue = Math.sqrt(num).toFixed(5);
+}
+function inputPi(){
+    if(firstOperator === null) {
+        if(displayValue === '0' || displayValue === 0) {
+            //1st click - handles first operand input
+            displayValue = (Math.PI).toFixed(5);
+        } else if(displayValue === firstOperand) {
+            //starts new operation after inputEquals()
+            displayValue = (Math.PI).toFixed(5);
+        } 
+    } else {
+        //3rd/5th click - inputs to secondOperand
+        if(displayValue === firstOperand) {
+            displayValue = (Math.PI).toFixed(5);
+        } 
+    }
+}
+function inputPower(){
+
 }
