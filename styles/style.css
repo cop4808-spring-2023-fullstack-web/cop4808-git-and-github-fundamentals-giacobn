@@ -24,7 +24,7 @@ html {
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(6, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(6, 80px);/*added extra row*/
     gap: 2px;
 }
 
@@ -112,6 +112,7 @@ button {
 .percent:active {
     background-color: rgb(123, 189, 255);
 }
+/*below top row colors c*/
 .sqrt {
     background-color: aqua
 }
@@ -124,10 +125,10 @@ button {
 .sqred:active {
     background-color: rgb(165, 255, 255);
 }
-.power {
+#power {
     background-color: aqua
 }
-.power:active {
+#power:active {
     background-color: rgb(165, 255, 255);
 }
 .pi {

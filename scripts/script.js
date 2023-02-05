@@ -187,19 +187,22 @@ function operate(x, y, op) {
         return x / y;
         }
     }else if(op === "power") {
-        return(x ** y);
+        return(x ** y); // handles power operation
     }
 }
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
+//squared function
 function inputSqred(num) {
     displayValue = (num * num).toString();
 }
+//squareroot function
 function inputSqrt(num) {
     displayValue = Math.sqrt(num).toFixed(5);
 }
+//function for pi
 function inputPi(){
     if(firstOperator === null) {
         if(displayValue === '0' || displayValue === 0) {
@@ -215,7 +218,4 @@ function inputPi(){
             displayValue = (Math.PI).toFixed(5);
         } 
     }
-}
-function inputPower(){
-
 }
