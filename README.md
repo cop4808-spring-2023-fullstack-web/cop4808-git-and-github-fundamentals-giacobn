@@ -1,7 +1,6 @@
 # :wave: Nicholas Giacobbe
-# :wave: The Basics of GitHub 
+# :wave: Calculator
 
-## 🤓 Course overview and learning outcomes 
 
 this is a calculator app. I have added a new row of functions plus added some new colors. 
 
